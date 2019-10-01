@@ -103,7 +103,7 @@ public class CountryPickerView: NibView {
     }
     
     func setup() {
-        flagImageView.image = selectedCountry.flag
+        flagImageView.image = selectedCountry.flag.withRenderingMode(.alwaysOriginal)
         countryDetailsLabel.font = font
         countryDetailsLabel.textColor = textColor
         if showPhoneCodeInView && showCountryCodeInView {
